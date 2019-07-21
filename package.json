@@ -1,0 +1,26 @@
+{
+  "name": "line_notify-gmail_watch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ytxxzzzz/line_notify-gmail_watch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ytxxzzzz/line_notify-gmail_watch/issues"
+  },
+  "homepage": "https://github.com/ytxxzzzz/line_notify-gmail_watch#readme",
+  "dependencies": {
+    "googleapis": "^39.2.0"
+  },
+  "devDependencies": {
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}
