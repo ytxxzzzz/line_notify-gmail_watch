@@ -1,5 +1,5 @@
 {
-  "name": "line_notify-gmail_watch",
+  "name": "gas_tools",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,19 +8,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ytxxzzzz/line_notify-gmail_watch.git"
+    "url": "git+https://github.com/freshbrashman/gas_tools.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ytxxzzzz/line_notify-gmail_watch/issues"
+    "url": "https://github.com/freshbrashman/gas_tools/issues"
   },
-  "homepage": "https://github.com/ytxxzzzz/line_notify-gmail_watch#readme",
-  "dependencies": {
-    "googleapis": "^39.2.0"
-  },
+  "homepage": "https://github.com/freshbrashman/gas_tools#readme",
   "devDependencies": {
-    "tslint": "^5.18.0",
-    "typescript": "^3.5.3"
+    "@google/clasp": "^2.1.0",
+    "tslint": "^5.18.0"
+  },
+  "dependencies": {
+    "@types/google-apps-script": "0.0.54"
   }
 }
