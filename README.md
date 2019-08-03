@@ -1,16 +1,18 @@
 # GmailのWatchAPIによるメール監視→PubSub送信
 
 ## デプロイ方法
-- GASの単体スクリプトを作る
+- GASの単体スクリプト(個別のGoogleシートと紐付かないやつ)を作る
   - Driveで`新規ーその他ーGoogleAppsScript`でスクリプトファイルを作る
-- このリポジトリをCloneする
+- このリポジトリをローカルにCloneする
 - `npm install`する
-  - TypeScript環境一式がインストールされる
-- .clasp.jsonにスクリプトIDを指定してソースとGASファイルの紐付けを行う
+  - →TypeScript環境一式がインストールされる
+- .clasp.jsonにスクリプトIDを指定してローカルのソースとGASファイルの紐付けを行う
   - ★スクリプトIDが外部に漏れるとたぶんやばいので、ちゃんとgitignoreされていることを確認すること！！
 - このコードをclaspでデプロイ
   - デプロイは`clasp push`で行う
   - ※claspコマンドはnode_modulesにインストールされるので、`./node_modules/.bin`をパスに追加するなど必要
+  - 実装するのはTypeScriptの`.ts`ファイルだが、アップロードするのは`.gs`ファイル。
+    - 勝手にトランスパイルされるので、tsファイルだけ意識していれば良い
 - スクリプトプロパティを設定
   - GASの画面の`ファイループロジェクトのプロパティ`で表示されるダイアログのスクリプトプロパティに以下の値をセットする
     - gmail_watch_label
